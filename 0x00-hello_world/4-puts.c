@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - function puts prints 
+ * main - function puts prints
+ *
  * Return:0
  */
 

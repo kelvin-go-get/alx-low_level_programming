@@ -1,10 +1,9 @@
 #include "main.h"
-#include <unistd.h>
 
 /**
  * print_numbers - prints numbers 0 - 9
  *
- * Return: On success 1. On error, -1 is returned, and errno is set appropriately.
+ * Return: On success 1 -1 is returned, and errno is set
  */
 void print_numbers(void)
 {

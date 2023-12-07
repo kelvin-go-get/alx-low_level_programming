@@ -1,1 +1,21 @@
-147
+def is_palindrome(num):
+    return str(num) == str(num)[::-1]
+
+def find_largest_palindrome():
+    largest_palindrome = 0
+
+    for i in range(100, 1000):
+        for j in range(100, 1000):
+            product = i * j
+            if is_palindrome(product) and product > largest_palindrome:
+                largest_palindrome = product
+
+    return largest_palindrome
+
+# Find the largest palindrome
+result = find_largest_palindrome()
+
+# Save the result in the file
+with open("https://github.com/kelvin-go-get/alx-low_level_programming/tree/master/0x17-doubly_linked_lists/102-result", "w") as file:
+    file.write(str(result))
+
